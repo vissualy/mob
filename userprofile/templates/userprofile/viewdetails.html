@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'trialmultivendor/vendordetails.css' %}">
+</head>
+<body>
+    {% block body %}
+        <div class="content">
+            <div class="selfie">
+                <img src="{{vendor.image.url}}" alt="" id="vendorid">
+            </div>
+            <div class="image">
+                <img src="{{vendor.identification.url}}" alt="" id="vendorid">
+            </div>
+            <div class="idnumber">
+                {{vendor.identification_number}}
+            </div>
+            <div class="first">
+                first name:{{vendor.first_name}}
+            </div>
+            <div class="last">
+                last name:{{vendor.last_name}}
+            </div>
+            <div class="mobile">
+                mobile number:{{vendor.mobile_number}}
+            </div>
+            <div class="bussiness_name">
+                bussiness name:{{vendor.bussiness_name}}
+            </div>
+            <div class="bussiness_address">
+                bussiness_address:{{vendor.bussiness_address}}
+            </div>
+            <div class="bussiness_number">
+                bussiness_number:{{vendor.bussiness_number}}
+            </div>
+            <div class="dicesion">
+                <a href="{% url 'acceptvendor' vendor.id 'accept' %}"><button>accept</button></a>
+                <a href="{% url 'acceptvendor' vendor.id 'decline' %}"><button>decline</button></a>
+            </div>
+            <a href="{% url 'reviewvendors' %}"><button>back</button></a>
+        </div>
+    {% endblock %}
+</body>
+</html>

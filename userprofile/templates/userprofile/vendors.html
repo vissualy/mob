@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'trialmultivendor/account.css' %}">
+</head>
+<body>
+    <header>
+        <div class="home">
+            <a href="{% url 'homepage' %}">
+                <button>admin</button>                 
+            </a>
+        </div>
+    </header>
+    {% block body %}
+        {% for vendor in vendors %}
+            {{vendor.first_name}} {{vendor.last_name}}<a href="{% url 'acceptedvendor' vendor.id %}"><button>view</button></a>
+        {% endfor %}
+    {% endblock %}
+</body>
+</html>

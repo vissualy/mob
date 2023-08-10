@@ -1,0 +1,116 @@
+.first{
+    position: relative;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+}
+.home{
+    margin-left: 10px;
+}
+#homepage{
+    width: 20px;
+    color: white;
+    transition: color 0.3s;
+}
+#homepage:hover{
+    color: lightblue;
+}
+.search{
+    align-items: center;
+    
+}
+#in{
+    background-color: white;
+    border: 1px solid white;
+}
+#sear{
+    width: 12px;
+    color: white;
+    margin-left: 10px;
+    transition: color 0.3s;
+}
+#sear:hover{
+    color: lightblue;
+}
+#search{
+    padding: 1px;
+    border: 1px solid black;
+}
+.account{
+    margin-right: 10px;
+}
+#accont{
+    width: 20px;
+    color: white;
+    transition: color 0.3s;
+}
+#accont:hover{
+    color: lightblue;
+}
+.products{
+    margin-top: 10px;
+}
+.product{
+    border: 1px solid black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 5px;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.price,.tittle{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.description{
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    height: 100px;
+}
+.image{
+    text-align: center;
+}
+.video{
+    border: 1px solid black;
+    border-radius: 20px;
+}
+#user{
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+}
+.description{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+}
+.price,.tittle{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+}
+.info{
+    text-align: left;
+}
+#error{
+    font-family: 10px;
+    color: red;
+}
+.button{
+    margin-right: 10px;
+}
+#user:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+#signup{
+    width: 80px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}

@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'trialmultivendor/login.css' %}">
+</head>
+<body>
+    {% block body %}
+        <div class="contents">
+            <form method="post">
+                {% csrf_token %}
+                <div class="username">
+                    <p id="username">{{form.username.label}}</p>
+                    {{form.username}}
+                </div>
+                <div class="password">
+                    <p id="password">{{form.password.label}}</p>
+                    {{form.password}}
+                </div>
+                <button type="submit" id="submit">submit</button>
+            </form>
+            <a href="{% url 'signup' %}"><button id="submit">signup</button></a>    
+        </div>
+    {% endblock %}
+</body>
+</html>

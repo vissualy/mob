@@ -1,0 +1,114 @@
+.first{
+    position: relative;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+}
+.home{
+    margin-left: 10px;
+}
+#homepage{
+    width: 20px;
+    color: white;
+    transition: color 0.3s;
+}
+#homepage:hover{
+    color: lightblue;
+}
+.search{
+    align-items: center;
+    
+}
+#in{
+    background-color: white;
+    border: 1px solid white;
+}
+#sear{
+    width: 12px;
+    color: white;
+    margin-left: 10px;
+    transition: color 0.3s;
+}
+#sear:hover{
+    color: lightblue;
+}
+#search{
+    padding: 1px;
+    border: 1px solid black;
+}
+.account{
+    margin-right: 10px;
+}
+#accont{
+    width: 20px;
+    color: white;
+    transition: color 0.3s;
+}
+#accont:hover{
+    color: lightblue;
+}
+.menu{
+    background-color: white;
+    border: 1px solid #262626;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+.context{
+    width: 100%;
+    margin: 10px;
+    display: flex;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.product{
+    width: 201px;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+.price{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    display: flex;
+}
+.log{
+    margin-right: 10px;
+}
+#signup{
+    width: 80px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+#login{
+    width: 80px;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+}
+#pricedisplay{
+    color: black;
+}
+.custom-video {
+    width: 200px;
+    border: 1px solid white;
+    height: 400px;
+    border-radius: 10px;
+    transition: border-radius 0.2s;
+}
+.custom-video:hover{
+    border-radius: 0%;
+}
+#btnsearch{
+    background-color: black;
+    border: 1px solid black;
+}

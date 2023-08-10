@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block body %}
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="identification">
+                <div class="image">
+                    <p>{{form.image.label}}</p>
+                    {{form.image}}
+                </div>
+                <div class="id">
+                    <p>{{form.identification.label}}</p>
+                    {{form.identification}}
+                </div>
+                <br>
+                <div class="identification_number">
+                    <P>{{form.identification_number.label}}</P>
+                    {{form.identification_number}}
+                </div>
+            </div>
+            <div class="name">
+                <div class="first">
+                    <p>{{form.first_name.label}}</p>
+                    {{form.first_name}}
+                </div>
+                <br>
+                <div class="last">
+                    <p>{{form.last_name.label}}</p>
+                    {{form.last_name}}
+                </div>
+            </div>
+            <div class="mobile">
+                <p>{{form.mobile_number.label}}</p>
+                {{form.mobile_number}}
+            </div>
+            <div class="bussiness">
+                <div class="name">
+                    <p>{{form.bussiness_name.label}}</p>
+                    {{form.bussiness_name}}
+                </div>
+                <div class="address">
+                    <p>{{form.bussiness_address.label}}</p>
+                    {{form.bussiness_address}}
+                </div>
+                <div class="number">
+                    <p>{{form.bussiness_number.label}}</p>
+                    {{form.bussiness_number}}
+                </div>
+            </div>
+            <button type="submit">submit</button>
+        </form>
+    {% endblock %}
+</body>
+</html>

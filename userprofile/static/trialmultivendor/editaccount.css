@@ -1,0 +1,41 @@
+.first{
+    border: 1px solid black;
+    height: 70px;
+    margin-bottom: 20px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+#home{
+    width: 30px;
+    color: white;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.contents{
+    border: 1px solid black;
+    text-align: center;
+}
+.bio{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.submit{
+    margin: 10px;
+}
+#submit{
+    width: 100px;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+}
+.account{
+    margin: 10px;
+}
+#account{
+    width: 30px;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+}

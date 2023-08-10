@@ -1,0 +1,24 @@
+.contents{
+    border: 1px solid black;
+    text-align: center;
+    padding: 100px;
+    height: 400px;
+    box-shadow: 1px 1px 10px black;
+}
+#username{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#password{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#submit{
+    margin-top: 20px;
+    width: 100px;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+}
+#submit:hover{
+    background-color: white;
+    color: black;
+}

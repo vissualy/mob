@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block body %}
+        <h2>
+            {{vendor.user.username}} followers
+        </h2>
+        <div class="followers">
+            {% for follower in followers %}
+                <li>
+                    {{follower.userusername}}
+                </li>
+            {% endfor %}
+        </div>
+        {% if request.user.is_authenticated %}
+            {% if not vendor.isfollowdby(request.user) %}
+                <form action="{% url 'followvendor' %}" method="post">
+                    {% csrf_token %}
+                    <button type="submit">follow</button>
+                </form>
+            {% else %}
+                <form action="{% url 'unfollowvendor' %}" method="post">
+                    {% csrf_token %}
+                    <button type="submit">unfollow</button>
+                </form>
+            {% endif %}
+        {% endif %}
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,79 @@
+.home{
+    border: 1px solid black;
+    background-color: black;
+    height: 70px;
+    align-items: center;
+}
+#home{
+    width: 30px;
+    margin: 10px;
+    color: white;
+    margin-top: 20px;
+}
+.contents{
+    border: 1px solid black;
+    height: 500px;
+    text-align: center;
+    padding: 20px;
+}
+.info{
+    margin: 10px;
+}
+.bio{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#edit{
+    width: 150px;
+    height: 30px;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+}
+#edit:hover{
+    background-color: white;
+    color: black;
+}
+#logout{
+    background-color: black;
+    width: 150px;
+    height: 30px;
+    color: white;
+    border: 1px solid black;
+}
+#logout:hover{
+    background-color: white;
+    color: black;
+}
+#dashboard{
+    width: 150px;
+    height: 30px;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+}
+#dashboard:hover{
+    background-color: white;
+    color: black;
+}
+#apply{
+    width: 150px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+#apply:hover{
+    background-color: white;
+    color: black;
+}
+.message{
+    margin: 10px;
+    border: 1px solid lightgreen;
+    height: 30px;
+    text-align: center;
+    background-color: lightgreen;
+    padding: 20px;
+}
+#message{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
